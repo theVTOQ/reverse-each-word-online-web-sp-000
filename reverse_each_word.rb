@@ -1,3 +1,5 @@
 def reverse_each_word(message)
-  message.reverse
+  reversed = message.split
+  reversed.collect {|word| word.reverse}
+  reversed.join
 end
