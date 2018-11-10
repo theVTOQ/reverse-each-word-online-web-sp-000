@@ -1,7 +1,8 @@
 def reverse_each_word(message)
-  reversed = message.split
-  reversed.collect do |word|
-    word.reverse
+  split_phrase = message.split
+  reversed = []
+  split_phrase.each do |word|
+    reversed << word.reverse
   end
   reversed = reversed.join
 end
